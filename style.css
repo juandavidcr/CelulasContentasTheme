@@ -1,0 +1,907 @@
+/*
+	Theme Name: Celulas
+	Theme URI: http://localhost/celulas
+	Description: Celulas contentas
+	Version: 1.0.0
+	Author: Juan Contreras (@johndavid133)
+	Author URI: http://jd.cloudvent.net
+	Tags: celulas contentas
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+	/* global box-sizing */
+	*,
+	*:after,
+	*:before {
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		-webkit-font-smoothing:antialiased;
+		font-smoothing:antialiased;
+		text-rendering:optimizeLegibility;
+	}
+	/* html element 62.5% font-size for REM use */
+	html {
+		font-size:62.5%;
+	}
+	body {
+		font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		color:#444;
+	}
+	/* clear */
+	.clear:before,
+	.clear:after {
+	    content:' ';
+	    display:table;
+	}
+
+	.clear:after {
+	    clear:both;
+	}
+	.clear {
+	    *zoom:1;
+	}
+	img {
+		max-width:100%;
+		vertical-align:bottom;
+	}
+	a {
+		color:#444;
+		text-decoration:none;
+	}
+	a:hover {
+		color:#444;
+	}
+	a:focus {
+		outline:0;
+	}
+	a:hover,
+	a:active {
+		outline:0;
+	}
+	input:focus {
+		outline:0;
+		border:1px solid #04A4CC;
+	}
+
+/*------------------------------------*\
+    HEADER
+\*------------------------------------*/
+
+	/* wrapper */
+	.wrapper {
+		max-width:1280px;
+		margin:0 auto;
+		position:relative;
+	}
+	/* header */
+	.header {
+		position: relative;
+	}
+	/* logo */
+	.logo {
+	   float:left;
+	}
+	.logo-img {
+		width: 50%;
+		border: 1px solid black;
+		background-color: transparent;
+		background-size: cover;
+		margin: 1.2em 2.9em 0 2.9em;
+		z-index: 2;
+		position: relative;
+	}
+	/* nav */
+	.nav {
+		width: auto;
+	}
+
+	.navegation{
+		
+		z-index: 3;
+		padding-right: 1em;
+		background: linear-gradient(-90deg,  #249ed7,#91b43d );
+		border:0px;
+		height: 80px;
+		position: relative;
+	}
+
+	.t1{
+		display: none;
+	}
+	.nav ul{
+		right: 0px;
+		top:0px;
+	    list-style: none;
+	    float: left;
+	    top:25px;
+	    position: relative;
+	}
+	.nav ul li{
+	     float: left;
+	     padding-right: 1em;
+
+	}
+	.nav ul li a{
+		font-size: 2.0em;
+		padding: 1em;
+		color: white;
+	}
+
+	/* navMov (sandwich) */
+	.navMobSandy{
+		font-size: 3.5em;
+		margin-right: 1em;
+		position: absolute;	
+		right:0;
+		background: transparent;
+		cursor: pointer;
+		transition: 1s;
+		padding: 15px;
+		z-index: 1;
+	}
+
+	.navMob{
+		display: none;
+	}
+	.navMob{
+		width: 100%;
+		padding-top:69px;		        
+	    margin-right: 0;
+	    position: absolute;
+	    right: 0;
+	}
+	.navMob ul{
+		align-content: center;
+		background: linear-gradient(-90deg,  #249ed7,#91b43d );
+	    list-style:none;
+	    border-bottom-left-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	    margin-left: 10px;
+	}
+	.navMob ul li{
+		padding: 5px 15px; 
+		border-bottom: 2px solid #fff;
+	}
+	.navMob ul li.page-item-11{ /* AQUÍ TIENES QUE DECIR QUE EL ÚLTIMO HIJO DE ESTA CLASE NO TENGA BORDER-BOTTOM */
+		padding-right: 1.5em;
+		padding-left: 1em;
+		border-bottom: none;
+	}
+	.navMob ul li a{
+		display: inline-block;
+		font-size: 2.0em;
+		color: white;
+	}
+
+	.navTel{
+		float:right;
+	}
+
+	.navTel {
+		margin-right: 10%;
+		overflow: hidden;	
+		margin-top: 5px;
+		padding: 10px 20px;
+	    background-color: rgba(133,133,133,0.5);
+	    width: 250px;
+	    height: 65px;
+	    color: #fff;
+	    border-radius: 13px;
+	    content: #fff;
+	    padding-top: 10px;
+	}
+	span.header_text_llamanos{
+		text-transform: uppercase;
+		float: left;
+		font-size: 2.0em;
+		line-height: 1em;	
+	}
+	span.header_text_tel{
+		float: left;
+		margin-left: 0px;
+		font-size: 16.5px;
+	    vertical-align: super;
+
+	}
+	.header_text_icono_tel{
+		width: 30%;
+		padding:1px;
+		float: left;
+		font-size: 14px;	
+	}	
+	.header_field_contact{
+		width: 70%;
+		float: left;
+	}
+	/* sidebar */
+	.sidebar {
+
+	}
+	/* footer */
+	.footer {
+		background-color: silver;
+		position: relative;
+		border: 1px solid #fff;
+		text-align: center;
+	    width: 100%;
+	    font-weight: bolder;
+	    font-size: 1.5em;
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	}
+	h1.foot1{
+		font-family: sans-serif;
+		font-weight: normal;
+		text-transform: uppercase;
+	    font-size: 1.1em;
+	    margin-bottom: 0px;
+	    padding-bottom: 0em;
+	}
+	.footer  p{
+		height: 10px;
+		background-color: #d2d2d3;	
+	}
+	.footer span {
+		text-overflow: all;
+		font-size: 0.8em;
+	}
+
+	    
+
+
+
+/*------------------------------------*\
+    PAGES - Landing > Como
+\*------------------------------------*/
+
+
+	.section_como_titulo {
+		margin:10px 1.5em 1.8em 1em;
+		color: white;
+		line-height: 1.4em;
+		font-size: 38.88pt;
+		font-style: normal;
+		font-weight: 900;
+		font-stretch: expanded;
+		text-shadow: 5px 5px #232323;
+		background-size: cover;
+	}
+
+
+	.section_como_parrafo {
+		display: inline-flex;
+		height: 250px;
+		font-size: 2em;
+		text-align: left;
+		padding: 36.5px 24.5px;
+		margin-top: 2em;
+	}
+
+
+	#servicios .cabecera{
+		background-color: #236186;
+		color: #fff;
+	}
+	#servicios .cuadros{
+		float:left;
+		background: #d2e8da;
+		margin-top: 40px;
+		margin-bottom: 80px;
+		height: 700px;
+		line-height: 50px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.cuadros h1{
+		padding:1.8em; 
+		text-transform: 
+		uppercase; 
+		color: #586760; 
+		font-size: 16pt;
+		margin: 0;
+	}
+	#servicios .cuadroCentro{
+		float:left;
+		background: #296184;
+		height: 750px;
+		padding: 0;
+		line-height: 50px;
+	}
+	.cuadroCentro h1{
+		text-transform: uppercase;
+		font-size: 3.0em;
+		color: #000;
+		font-style: normal;
+		margin: 0;
+
+		padding-bottom: 40px;
+	}
+	.cuadroCentro big{
+		font-size: 4em;
+		font-weight: 500;
+		color: #e4f9fd;
+	}
+	
+    .text-item{
+    	margin-bottom: 95px;
+    	text-align: center;
+
+    }
+    #como .base{
+    	background: cadetblue;
+    }
+	
+/*------------------------------------*\
+    PAGES - HOMEPAGE
+\*------------------------------------*/
+    .p_contacto_info{
+    	border-bottom: 3px solid #fff; 
+    	padding-bottom: 30px;
+    }
+	section#home_section_encabezado
+	{
+		padding:1px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('https://i.imgur.com/ErtgQZm.jpg');
+	}
+	.img-bg-index {
+		display: flex;
+		overflow-y: visible;
+		z-index: 0;
+		 
+		
+		top:0px;
+		color: #ccc;
+		background-color: rgba(133,133,133,0.5);
+		height: 110%;
+	}
+	
+	.letter3{
+		margin-top: 1.0em;
+		position: relative;
+		font-size: 50px;
+		font-size:39pt;
+		letter-spacing: 0.4rem;
+	}
+	
+	.letter4{
+		color: #fff;
+		font-weight: lighter;
+		font-size: 26pt;
+	    float: left;
+	    padding-bottom: 4px;
+	}
+	.boton1{
+		position: relative;
+		cursor: pointer;
+		font-size: 2.5em;
+		text-align: center;
+		width: 310px;
+		height: 65px;		
+		box-shadow: 5px 10px #888888;		
+	}
+	.boton2{
+		margin-top: 1em;
+		position: relative;
+		cursor: pointer;
+		font-size: 2.5em;
+		text-align: center;
+		width: 310px;
+		height: 65px;
+		box-shadow: 5px 10px #888888;	
+	}
+    #como{
+    	background: #000;
+    	color: white;
+    }
+	#como h3{
+		font-size: 30px;
+		text-align: left;
+		padding-left: 2em;
+
+	}
+	#como div.col-5 h3#tema{
+		padding-top: 0.5em;
+		z-index: 100;
+
+	}
+	#contacto{
+		background: orange;
+		color: white;
+	}
+	#contacto i{
+		padding-top: 20px;
+	}
+   
+	#formulario{
+		
+		background: cadetblue;
+		color :white;
+	}
+	#formulario input{
+		height: 50px;
+		width: 450px;
+	}
+	fieldset.form_home{
+		display: block;
+		width: auto;
+		padding-bottom: 1em;
+	}
+	.form_home >input{
+		display: block;
+	}
+	.triangulo-tricolor {
+		
+	    width: 0;
+	    height: 0;
+	    border-left: 120px solid #000;
+	    border-top: 60px solid cadetblue;
+	    border-bottom: 60px solid cadetblue;
+    }
+	/*------------------------------------*\
+	    IMAGES
+	\*------------------------------------*/
+
+	.video_de_YT{
+		position: relative;
+		display: inline;
+		float: right;
+	}
+/*------------------------------------*\
+    PAGES - Landing > Servicios
+\*------------------------------------*/
+	#servicios .row .col-12{
+		background-color: #236186;
+	}
+	.text_header_cuadros{
+		background-color: #236186; 
+		color: white; 
+		text-transform: uppercase; 
+		font-size: 36px;
+		padding:20px;
+		font-weight: 600;
+		font-style: bold; 
+		letter-spacing: 2px;
+		} 
+	.cuadros-background{
+		background: cadetblue !important;
+		padding-top: 40px;	
+		padding-bottom: 40px;	
+		
+	}	
+	.texto_sec_cuadros{
+		background: #d4d4d4 !important; 
+		margin: 0 !important;
+	}
+	.texto_sec_cuadros h1{
+		font-size: 3.5em;
+	}
+	.info_cuadros{
+		background-color: white !important;
+	}
+    .info_cuadros p{
+    	padding-right: 1em;
+    	padding-left: 1em;
+    	text-align: center;
+		background-color: white;
+		font-size: 26px;
+    }
+    #servicios .btn-servicios {
+		 background: red;
+		 padding: 20px;
+		 text-transform: uppercase;
+		 font-weight: 200;
+		 font-size: 2em; color: #fff;
+		 cursor: pointer;
+		 position: relative;
+		 width:88%;
+		 margin: 0 20px;"
+	}
+    #servicios .col-12{display: table;}
+	#servicios .col-12 > p{
+		display: table-cell;
+	}
+	#servicios p {
+		color: #8fa39f;
+		margin-top: 0;
+		padding:0 1rem;
+		vertical-align: middle;
+	}
+	.text-item{
+    	margin-bottom: 95px;
+    	text-align: center;
+		background-color: #296184 !important;
+    }
+
+
+/*------------------------------------*\
+    PAGES - Landing > Testimonios
+\*------------------------------------*/
+	 #testimonios{
+	 	padding-top: 100px;
+	 }
+	 .text-testimonial{
+	 	text-align: center;
+	 	padding-right: 50px;
+	 	position: relative;
+		text-align: justify-all;
+	 	font-size: 30pt;
+	 	float: right;
+	 	vertical-align: middle;
+	 	margin-bottom: 140px;
+	 }
+/*------------------------------------*\
+    PAGES - Landing > Ofrecemos
+\*------------------------------------*/
+	.section_ofrecemos_titulo{
+		background-color: #785128; 
+		text-transform: uppercase;
+		font-size: 7px;
+	}
+    .section_ofrecemos_h2{
+    	font-size: 39px; 
+    	font-weight: 700; 
+    	color: #fff; 
+    	padding:25px;
+    }
+    .section_fondo_ofrecemos
+    {
+		padding: 40px 0;
+    	background: #d6932b; 
+    	height:auto;
+    }
+    .col4-ofrecemos{
+    	float: left; 
+    	padding: 50px; 
+    	color: white; 
+    	font-size: 1em;
+    }
+    .ofrecemos_titulo {
+    	position: relative;
+    	padding: 20px 10px 10px;
+    	font-weight: 700;
+    	font-size: 26px;
+	}
+    .ofrecemos_parrafo {
+	    text-align: justify;
+	    -moz-text-align-last: center;
+	    text-align-last: center;
+	    margin-top:0em;
+	    padding: 0 40px;
+	    font-size: 16px;
+	}
+/*------------------------------------*\
+    PAGES - Landing > Clientes
+\*------------------------------------*/
+
+	#clientes{
+		width: 100%;
+		height: auto;
+		background-color: rgba(0,0,0,0.1);
+		background-size: cover;
+		word-spacing: 5px;
+	}
+
+    #clientes h1{
+    	line-height: 50px;
+    	 padding-top: 80px;
+    	 padding-bottom: 80px;
+         text-transform: uppercase;
+         baseline-shift: all;
+         font-size: 35px;
+		 letter-spacing: 2px; 
+		 font-weight:700;	
+		 color: #439ca0;
+    }
+
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+	@font-face {
+		font-family:'Font-Name';
+		src:url('fonts/font-name.eot');
+		src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+			url('fonts/font-name.woff') format('woff'),
+			url('fonts/font-name.ttf') format('truetype'),
+			url('fonts/font-name.svg#font-name') format('svg');
+	    font-weight:normal;
+	    font-style:normal;
+	}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+	@media only screen and (min-width:320px) and (max-width: 479px) {
+		       .triangulo-tricolor{display: none;}
+		       .letter3{
+		       		margin-top:0px;
+		       		font-size: 2.5em;
+		       }
+		       .letter4{
+		       	font-size: 2rem;
+		       }
+		       .boton1{
+		       	position: relative;
+		       	cursor: pointer;
+		       	font-size: 1.5em;
+		       	text-align: center;
+		       	width: 75%;
+		       	height: 50%;
+		       	margin-left: 2%;		
+		       	margin-right: 2%;
+		       	box-shadow: 5px 10px #888888;		
+		       }
+               #como> .row,.col-xs-12{
+		       	 display: block;
+		       }
+			   #como .col-xs-12 .col-5{
+			   		background: cadetblue;
+			   }	
+		       .boton2{
+		       	padding-top: 20px;
+		       	display: block;
+		       	position: relative;
+		       	cursor: pointer;
+		       	font-size: 1.5rem;
+		       	text-align: center;
+		       	width: 160px;
+		       	height: 50%;
+		       	margin-left: 2%;		
+		       	margin-right: 2%;
+		       	box-shadow: 5px 10px #888888;	
+		       }
+			   .base{
+			   	 min-width: 360px;
+			   	 min-height: 100px;
+			   	 width: 100% !important;
+			   	 padding:25px;	
+			   	 padding-bottom: 25px;
+			   }	
+               
+			   .video_de_YT{
+					margin-left: 20px;
+				}
+				.contact-phone{
+					text-align: center;
+					vertical-align: middle;
+					padding: 10px; 
+					font-size: 18px;
+				}
+				.contact_email{
+					font-size: 9pt;
+					word-break: keep-all;
+				}
+			   #formulario input{
+					width: 65%;
+				}
+              
+
+	}
+	@media only screen and (min-width:480px) and (max-width: 600px) {
+		.triangulo-tricolor{display: none;}
+		.contact_email{
+					font-size: 10pt;
+				}
+	}
+	@media only screen and (min-width:768px) {
+		.contact_email{
+					font-size: 11pt;
+				}
+	}
+	@media only screen and (min-width:1024px) {
+
+	}
+	@media only screen and (min-width:1140px) {
+
+	}
+	@media only screen and (min-width:1351px) {
+	    .nav {
+			display: block;
+		}
+		.navMob {
+			display: none;
+		}
+		.navMobSandy {
+			display: none;
+		}
+	}
+		
+	@media only screen and (max-width:1350px) {
+	    .nav {
+			display: none;
+		}
+		.navTel{
+			display: none;
+		}
+		.navMob {
+			display: none;
+		}
+	    .navMobSandy{
+			display: block;
+	    }
+	}
+	@media only screen and (min-width:1280px) {
+
+	}
+	@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+		   only screen and (min-resolution:144dpi) {
+
+	}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+	::selection {
+		background:#04A4CC;
+		color:#FFF;
+		text-shadow:none;
+	}
+	::-webkit-selection {
+		background:#04A4CC;
+		color:#FFF;
+		text-shadow:none;
+	}
+	::-moz-selection {
+		background:#04A4CC;
+		color:#FFF;
+		text-shadow:none;
+	}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+	.alignnone {
+		margin:5px 20px 20px 0;
+	}
+	.aligncenter,
+	div.aligncenter {
+		display:block;
+		margin:5px auto 5px auto;
+	}
+	.alignright {
+		float:right;
+		margin:5px 0 20px 20px;
+	}
+	.alignleft {
+		float:left;
+		margin:5px 20px 20px 0;
+	}
+	a img.alignright {
+		float:right;
+		margin:5px 0 20px 20px;
+	}
+	a img.alignnone {
+		margin:5px 20px 20px 0;
+	}
+	a img.alignleft {
+		float:left;
+		margin:5px 20px 20px 0;
+	}
+	a img.aligncenter {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.wp-caption {
+		background:#FFF;
+		border:1px solid #F0F0F0;
+		max-width:96%;
+		padding:5px 3px 10px;
+		text-align:center;
+	}
+	.wp-caption.alignnone {
+		margin:5px 20px 20px 0;
+	}
+	.wp-caption.alignleft {
+		margin:5px 20px 20px 0;
+	}
+	.wp-caption.alignright {
+		margin:5px 0 20px 20px;
+	}
+	.wp-caption img {
+		border:0 none;
+		height:auto;
+		margin:0;
+		max-width:98.5%;
+		padding:0;
+		width:auto;
+	}
+	.wp-caption .wp-caption-text,
+	.gallery-caption {
+		font-size:11px;
+		line-height:17px;
+		margin:0;
+		padding:0 4px 5px;
+	}
+	.sticky {
+
+	}
+	.bypostauthor {
+
+	}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+	@media print {
+		* {
+			background:transparent !important;
+			color:#000 !important;
+			box-shadow:none !important;
+			text-shadow:none !important;
+		}
+		a,
+		a:visited {
+			text-decoration:underline;
+		}
+		a[href]:after {
+			content:" (" attr(href) ")";
+		}
+		abbr[title]:after {
+			content:" (" attr(title) ")";
+		}
+		.ir a:after,
+		a[href^="javascript:"]:after,
+		a[href^="#"]:after {
+			content:"";
+		}
+		pre,blockquote {
+			border:1px solid #999;
+			page-break-inside:avoid;
+		}
+		thead {
+			display:table-header-group;
+		}
+		tr,img {
+			page-break-inside:avoid;
+		}
+		img {
+			max-width:100% !important;
+		}
+		@page {
+			margin:0.5cm;
+		}
+		p,
+		h2,
+		h3 {
+			orphans:3;
+			widows:3;
+		}
+		h2,
+		h3 {
+			page-break-after:avoid;
+		}
+	}
+
+/*------------------------------------*\
+    JOHN CORE
+\*------------------------------------*/
+
+	.anti-margin {
+		margin: 0 !important;
+	}
+	.anti-margin-left {
+		margin-left: 0 !important;
+	}
+	.anti-margin-right {
+		margin-right: 0 !important;
+	}
+	.anti-margin-top {
+		margin-top: 0 !important;
+	}
+	.anti-margin-bottom {
+		margin-bottom: 0 !important;
+	}
